@@ -1,0 +1,421 @@
+/* Estilos globales */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #0f1d56;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+/* NavBar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./img/edit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+.logo-img img {
+  width: 100px;
+  height: 100px;
+  animation: rotar 5s linear infinite;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotatey(0deg);
+  }
+
+  30% {
+    transform: rotatey(90deg);
+  }
+
+  50% {
+    transform: rotatey(180deg);
+  }
+
+  70% {
+    transform: rotatey(280deg);
+  }
+
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+.logo-info {
+  font-size: 20px;
+  color: #00ff80;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  height: 150px;
+}
+
+.navbar-links a {
+  font-size: 18px;
+  color: #00ff80;
+}
+
+.navbar-links a:hover {
+  color: #88ff40;
+  text-decoration: underline;
+}
+
+.navbar-links img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+#menu-toggle,
+.menu-label{
+  display: none;
+}
+
+.menu-label img {
+  width: 25px;
+  height: 25px;
+}
+
+
+
+/* hero */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-search input {
+  background-color: #192f84;
+  padding: 5px 3px;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 20rem;
+}
+
+.hero-search input::placeholder {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hero-search button {
+  padding: 7px 20px;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px solid#192f84;
+  color: #192f84;
+  cursor: pointer;
+}
+
+.hero-search button:hover {
+  background-color: white;
+  transition: 500ms all ease-in-out;
+}
+
+.hero-info h3 {
+  color: bisque;
+  font-size: 2.5rem;
+}
+
+/* Categorias */
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.categories-container button {
+  cursor: pointer;
+  padding: 8px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #192f84;
+  color: bisque;
+}
+
+.categories-container button:hover {
+  background-color: #192e8487;
+
+}
+
+/* Cards */
+
+.cards-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  height: 500px;
+  width: 500px;
+  background-color: #0f1d56;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 60px;
+}
+
+.card-container img {
+  width: 400px;
+  height: 400px;
+}
+
+.card-container:hover {
+  background-color: white;
+  transition: 800ms all ease-in-out;
+}
+
+.card-info {
+  font-size: 2rem;
+  color: bisque;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  color: bisque;
+  text-align: center;
+}
+
+.card-price button {
+  padding: 7px 15px;
+  background-color: grey;
+  border-radius: 15px;
+  border: 2px solid#192f84;
+  color: #192f84;
+  cursor: pointer;
+}
+
+.card-price button:hover {
+  background-color: white;
+  transition: 500ms all ease-in-out;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.show-more button {
+  padding: 7px 20px;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px solid#192f84;
+  color: #192f84;
+  cursor: pointer;
+}
+
+.show-more button:hover {
+  background-color: white;
+  transition: 500ms all ease-in-out;
+}
+
+/* Contacto */
+
+.contact-tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.contact-tittle h4 {
+  font-size: 1.5rem;
+  color: #192f84;
+}
+
+.contact-tittle h2 {
+  font-size: 2rem;
+  color: #2545c4;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.contact-form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: lightslategray;
+  border-radius: 20px;
+}
+
+.contact-form input {
+  border-radius: 10px;
+  background-color: bisque;
+  border: 2px solid bisque;
+}
+
+.contact-form input::placeholder {
+  color: black;
+}
+
+.contact-form #submit {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.contact-form textarea {
+  border-radius: 10px;
+  background-color: bisque;
+  border: 2px solid bisque;
+}
+
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+
+.contact-form button {
+  padding: 7px 20px;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px solid#192f84;
+  color: #192f84;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: white;
+  transition: 500ms all ease-in-out;
+}
+
+
+/* Footer */
+
+
+.footer-container {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #00ff80;
+}
+
+.footer-links a:hover {
+  color: #88ff40;
+  text-decoration: underline;
+}
+
+
+/* Login & Register */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: lightslategray;
+}
+
+.login-tittle {
+  color: bisque;
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  border-radius: 10px;
+  background-color: bisque;
+  border: 2px solid bisque;
+}
+
+
+.login-form input::placeholder {
+  color: black;
+}
+
+.login-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.login-links a {
+  color: bisque;
+}
+
+
+.login-links a:hover {
+  text-decoration: underline;
+  color: rgb(251, 223, 188);
+}
